@@ -1,0 +1,77 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>ASYNC WITH SAB</h1>
+    <button id="stop">Stop</button> 
+</body>
+<script>
+    //setTimeout(function(){
+        //console.log("sab");
+    //},3000)
+    const saysab = function(){
+        console.log("sab");
+    }
+    const changeText = function(){
+        document.querySelector('h1').
+        innerHTML = "BEST js SERIES"
+    }
+    //setTimeout(changeText,5000)
+    const changeMe = setTimeout(changeText,2000)
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color: rgb(198, 215, 215);
+        }
+        table,th,td{
+            border: 2px solid rebeccapurple;
+        }
+        .project{
+            background-color: rgb(207, 207, 150);
+            color: rgb(34, 114, 184);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 50vh;
+            
+        }
+        .color{
+            color: bisque;
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <nav>
+        <a href="https://www.youtube.com/watch?v=_TjtAyMkiTI&t=12483s">YOUTUBE CHANNEL</a>
+    </nav> -->
+    <div class="project">
+        <div id="insert">
+            <div class="key">Press the key and watch magic</div>
+        </div>
+    </div>
+</body>
+<script src = "async.js"></script>
+
+</html>

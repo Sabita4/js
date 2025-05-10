@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body> 
+    <h1>Sab page</h1>
+</body>
+<script>
+  let cash = 1000;
+  //const cash = 1000; gives error beacuse it is constant
+  cash = cash +19000;
+  console.log(cash)
+
+  const pi = 3.14;
+  console.log(pi);
+  
+  { //block scope
+    const a = 1.89;
+    console.log(a)
+  }
+  //variable declared with let and const cant be redeclared
+  /*let a = 4
+  let a = 5*/ 
+
+  //let and const can be redeclared if one is block and another is global
+  let car = "Rolls Royce";
+  console.log(car)
+
+  let makeup ; //let ma chai paila declare garna milcha
+  makeup = "foundation";
+  console.log(makeup);
+
+  const clothes = "Blazer";  //const ma pailai declare garnuparne huncha
+  console.log(clothes);
+
+</script>
+</html>

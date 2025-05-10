@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: rgb(18, 19, 19); color: rgb(201, 201, 133);">
+        <ul class="language">
+            <li>Javascript</li>
+        </ul>  
+</body >
+<script>
+    function addLanguage(langName) {
+       const li = document.createElement('li');
+       li.innerHTML =`${langName}`
+       document.querySelector('.language').appendChild(li)
+    }
+   
+    addLanguage("HTML");
+    addLanguage("CSS");
+    addLanguage("Java");
+    addLanguage("Python");
+   
+    function addOptiLanguage(langName) {//this is better
+        const li = document.createElement('li');
+        //const addText = document.createTextNode(langName);
+        //li.appendChild(addText)
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("C++");
+
+    //edit
+    const thirdLang = document.querySelector(' li:nth-child(3)');
+   // thirdLang.innerHTML = "C#"
+   const newLi = document.querySelector('.language li:nth-child(2)');
+    newLi.textContent = "JOJO"
+  //  secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector('li:nth-child(1)');
+    firstLang.innerHTML ="Typescript"
+
+    //remove
+    const lastLang = document.querySelector('li:nth-child(5)');
+    lastLang.remove(); //remove the last element
+</script>
+</html>
