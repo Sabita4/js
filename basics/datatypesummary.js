@@ -12,8 +12,8 @@
 //  const roll = Symbol('123') //value pass
 //  const anotherRoll = Symbol('123')
 //  console.log(roll===anotherRoll);
- const bigNumber = 90929292n;
- const insideTemp = null
+//  const bigNumber = 90929292n;
+//  const insideTemp = null
  
 
 
@@ -36,3 +36,22 @@
     
 
 // console.log(myFunction);
+
+//STACK(primitive)yo use vako bela copy chai jancha ,HEAP(non-primitive) original value ko reference aaucha
+
+let myClass = "Highstandard"
+let anotherClass = "Lowerstandard"
+anotherClass = "Higheststandadrd"
+console.log(myClass);
+console.log(anotherClass);
+
+let userOne={
+    name:"jasmine"
+}
+let userTwo = userOne
+userTwo.name= {
+    name :"zora",
+   
+}
+console.log(userOne.name);
+console.log(userTwo.name);
